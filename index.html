@@ -369,6 +369,25 @@
         color: var(--muted);
       }
 
+      .pricing-addon {
+        margin-top: 2rem;
+        padding: 1.75rem;
+        border-radius: 1.5rem;
+        background: linear-gradient(140deg, rgba(255, 95, 143, 0.12), rgba(255, 176, 122, 0.08));
+        border: 1px solid rgba(255, 95, 143, 0.4);
+      }
+
+      .pricing-addon h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
+      }
+
+      .pricing-addon p {
+        margin: 0;
+        color: var(--muted);
+      }
+
       .use-cases {
         margin: 4rem 0;
         padding: clamp(2rem, 4vw, 4rem);
@@ -538,7 +557,7 @@
           </p>
           <div class="cta-row">
             <a class="cta-primary" href="#contact">Schedule an Automation Firing</a>
-            <button class="cta-secondary">See the savings model</button>
+            <a class="cta-secondary" href="#pricing">See the savings model</a>
           </div>
         </div>
         <div class="hero-media">
@@ -743,11 +762,11 @@
 	          CAIO is priced as a fraction of one executive package, with tiers tuned
 	          to how aggressively you want to de-layer the C-suite.
 	        </p>
-	        <div class="pricing-grid">
-	          <article class="pricing-tier">
-	            <h3>Lean Teams</h3>
-	            <p>Up to 250 employees, replacing 1–2 VP/EVP roles.</p>
-	            <p><strong>$8,000 / month</strong></p>
+        <div class="pricing-grid">
+          <article class="pricing-tier">
+            <h3>Lean Teams</h3>
+            <p>Up to 250 employees, replacing 1–2 VP/EVP roles.</p>
+            <p><strong>$8,000 / month</strong></p>
 	            <p>Expected savings: <strong>≈$1.2M / year</strong> in cash, stock, and perks.</p>
 	          </article>
 	          <article class="pricing-tier highlight">
@@ -761,13 +780,22 @@
 	            <p>Global enterprises, multiple business units, complex governance.</p>
 	            <p><strong>Custom, starting around one SVP salary</strong></p>
 	            <p>Expected savings: <strong>$10M+ / year</strong> when consolidating 4–6 executive seats.</p>
-	          </article>
-	        </div>
+          </article>
+        </div>
         <p class="pricing-note">
           All numbers are illustrative, based on blended Fortune 100 compensation data and
           typical bonus/equity structures. Your actual savings depend on how brave your org
           is about letting CAIO take the corner office.
         </p>
+        <article class="pricing-addon">
+          <h3>Special add-on: Take the Fall</h3>
+          <p>
+            For an eye-watering <strong>$3.5M flat fee</strong>, CAIO will assume full
+            responsibility for any scandal you need to neutralize—drafting resignation
+            letters, recording contrite video messages, and absorbing the media cycle so
+            the humans stay spotless.
+          </p>
+        </article>
       </section>
 
       <section class="contact" id="contact">
