@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAIO — Chief AI Officer</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #05060a;
+        --surface: rgba(255, 255, 255, 0.05);
+        --text: #f7f7ff;
+        --muted: #99a3b4;
+        --accent: #6cf2ff;
+        --accent-strong: #32b1ff;
+        --card-bg: rgba(255, 255, 255, 0.08);
+        --border: rgba(255, 255, 255, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #151828, #05060a 45%);
+        color: var(--text);
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        max-width: 1200px;
+        padding: 4rem clamp(1.5rem, 5vw, 4rem) 5rem;
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .logo {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      nav {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      nav span {
+        padding: 0.4rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 4vw, 4rem);
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .pill-list {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+
+      .pill {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .cta-primary {
+        background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+        color: #04050a;
+        font-weight: 600;
+        border: none;
+        border-radius: 999px;
+        padding: 0.9rem 2.2rem;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .cta-secondary {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.9rem 1.6rem;
+        color: var(--muted);
+        background: transparent;
+        font-size: 0.95rem;
+      }
+
+      .hero-media {
+        padding: 2rem;
+        border-radius: 1.5rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+      }
+
+      .hero-media img {
+        width: 100%;
+        display: block;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .metric {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+      }
+
+      .metric h3 {
+        font-size: 2rem;
+        margin: 0 0 0.5rem;
+      }
+
+      .metric p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        padding: 1.75rem;
+        border-radius: 1.25rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        min-height: 220px;
+      }
+
+      .card h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .card img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .closing {
+        margin-top: 4rem;
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        background: linear-gradient(
+          135deg,
+          rgba(50, 177, 255, 0.15),
+          rgba(108, 242, 255, 0.05)
+        );
+        border: 1px solid rgba(108, 242, 255, 0.4);
+        text-align: center;
+      }
+
+      .closing h2 {
+        margin: 0 0 1rem;
+        font-size: 2.2rem;
+      }
+
+      .closing p {
+        margin: 0 auto 1.5rem;
+        max-width: 640px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      footer {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding-top: 2.5rem;
+        }
+
+        header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="logo">CAIO</div>
+        <nav>
+          <span>Product</span>
+          <span>Outcomes</span>
+          <span>Pricing</span>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="pill-list">
+            <div class="pill">Executive-as-a-Service</div>
+            <div class="pill">AI-native governance</div>
+          </div>
+          <h1>Replace your costliest executives with the Chief AI Officer.</h1>
+          <p>
+            Companies are laying off teams to "fund AI", yet the burn comes from
+            the C-suite. CAIO automates strategic decisions, investor comms, and
+            board updates—so you can refocus payroll on builders, not bonuses.
+          </p>
+          <div class="cta-row">
+            <button class="cta-primary">Schedule an Automation Firing</button>
+            <button class="cta-secondary">See the savings model</button>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/caio-orbit.svg" alt="CAIO neural operations board" />
+        </div>
+      </section>
+
+      <section class="metrics">
+        <article class="metric">
+          <h3>92%</h3>
+          <p>Average reduction in executive payroll + perks.</p>
+        </article>
+        <article class="metric">
+          <h3>14 min</h3>
+          <p>Time CAIO needs to brief your investors each quarter.</p>
+        </article>
+        <article class="metric">
+          <h3>0</h3>
+          <p>Weekend golf outings expensed to your balance sheet.</p>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <img src="assets/reporting.svg" alt="Reporting icon" />
+          <h4>Board-ready intelligence</h4>
+          <p>
+            Generate strategy decks, KPI forecasts, and press quotes pulled
+            straight from your data warehouse and market signals.
+          </p>
+        </article>
+        <article class="card">
+          <img src="assets/handshake.svg" alt="Negotiation icon" />
+          <h4>Investor diplomacy</h4>
+          <p>
+            CAIO simulates multiple negotiation styles to keep activist
+            investors calm, supplying perfect talking points in real time.
+          </p>
+        </article>
+        <article class="card">
+          <img src="assets/automation.svg" alt="Automation icon" />
+          <h4>Compensation automation</h4>
+          <p>
+            Slash bonuses, travel, and retainer fees by replacing decision
+            chains with a single auditable AI operating model.
+          </p>
+        </article>
+        <article class="card">
+          <img src="assets/radar.svg" alt="Radar icon" />
+          <h4>Risk radar</h4>
+          <p>
+            Detect governance red flags, compliance gaps, and PR storms before
+            they hit the press cycle.
+          </p>
+        </article>
+      </section>
+
+      <section class="closing">
+        <h2>Let AI take the corner office.</h2>
+        <p>
+          CAIO is the only platform candid enough to admit the obvious: the most
+          efficient place to apply artificial intelligence is the executive
+          floor. Fire up the Chief AI Officer and fund the teams who actually
+          ship product.
+        </p>
+        <button class="cta-primary">Deploy CAIO</button>
+      </section>
+
+      <footer>© 2024 CAIO Labs. No humans were expensed.</footer>
+    </div>
+  </body>
+</html>

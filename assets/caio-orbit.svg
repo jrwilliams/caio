@@ -1,0 +1,37 @@
+<svg width="560" height="440" viewBox="0 0 560 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="560" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08102b"/>
+      <stop offset="1" stop-color="#020205"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#6cf2ff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#6cf2ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#32b1ff"/>
+      <stop offset="1" stop-color="#6cf2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="440" rx="32" fill="url(#bg)"/>
+  <circle cx="280" cy="210" r="180" stroke="url(#orbit)" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="280" cy="210" r="130" stroke="url(#orbit)" stroke-opacity="0.8" stroke-width="2"/>
+  <circle cx="280" cy="210" r="80" stroke="url(#orbit)" stroke-width="2"/>
+  <circle cx="280" cy="210" r="150" fill="url(#pulse)"/>
+  <circle cx="280" cy="210" r="12" fill="#6cf2ff"/>
+  <g fill="#32b1ff">
+    <circle cx="140" cy="190" r="8"/>
+    <circle cx="430" cy="170" r="7"/>
+    <circle cx="410" cy="310" r="9"/>
+    <circle cx="150" cy="310" r="6"/>
+    <circle cx="300" cy="70" r="5"/>
+  </g>
+  <g opacity="0.7" stroke="#6cf2ff" stroke-width="1.5">
+    <path d="M140 190 Q220 110 300 70"/>
+    <path d="M140 190 Q220 250 280 210 Q340 170 430 170"/>
+    <path d="M150 310 Q220 230 280 210 Q340 190 410 310"/>
+  </g>
+  <text x="280" y="350" fill="#d3eafd" font-family="Inter, sans-serif" font-size="28" text-anchor="middle">
+    Neural Operations Board
+  </text>
+</svg>
