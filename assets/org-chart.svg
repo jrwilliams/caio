@@ -1,0 +1,143 @@
+<svg width="680" height="420" viewBox="0 0 680 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="1" stop-color="#02020A"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#6CF2FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#6CF2FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="exec" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF7A7A"/>
+      <stop offset="1" stop-color="#FFB47A"/>
+    </linearGradient>
+    <linearGradient id="team" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2EE6FF"/>
+      <stop offset="1" stop-color="#43FFB0"/>
+    </linearGradient>
+    <linearGradient id="caio" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6CF2FF"/>
+      <stop offset="1" stop-color="#4294FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="420" rx="32" fill="url(#bg)"/>
+  <circle cx="340" cy="80" r="180" fill="url(#halo)" opacity="0.6"/>
+
+  <text x="40" y="56" fill="#F7F7FF" font-size="28" font-family="Inter, system-ui" font-weight="600">
+    From hierarchy to flow
+  </text>
+  <text x="40" y="84" fill="#9AA7BF" font-size="14" font-family="Inter, system-ui">
+    CAIO replaces the executive stack so teams sit closer to the decisions they need.
+  </text>
+
+  <!-- CAIO node -->
+  <g>
+    <rect x="230" y="96" width="220" height="68" rx="18" fill="#050B18" stroke="url(#caio)" stroke-width="2.5"/>
+    <rect x="234" y="100" width="212" height="60" rx="15" fill="url(#caio)" fill-opacity="0.2"/>
+    <text x="340" y="120" text-anchor="middle" fill="#E8FAFF" font-size="18" font-family="Inter, system-ui" font-weight="600">
+      CAIO • Chief AI Officer
+    </text>
+    <text x="340" y="142" text-anchor="middle" fill="#9AE6FF" font-size="12" font-family="Inter, system-ui">
+      Autonomous strategy, governance + investor comms
+    </text>
+  </g>
+
+  <!-- executive band (being removed) -->
+  <g>
+    <rect x="60" y="180" width="560" height="70" rx="20" fill="#1A0A12" fill-opacity="0.9" stroke="#FF7A7A" stroke-opacity="0.7"/>
+    <text x="340" y="198" text-anchor="middle" fill="#FF9FA7" font-size="12" font-family="Inter, system-ui" letter-spacing="0.12em">
+      EXECUTIVE LAYER
+    </text>
+
+    <g font-family="Inter, system-ui" font-size="12" text-anchor="middle" fill="#1B0508">
+      <g>
+        <rect x="86" y="204" width="90" height="34" rx="10" fill="url(#exec)" opacity="0.9"/>
+        <text x="131" y="225" font-weight="600">BOARD</text>
+      </g>
+      <g>
+        <rect x="190" y="204" width="80" height="34" rx="10" fill="url(#exec)" opacity="0.9"/>
+        <text x="230" y="225" font-weight="600">CEO</text>
+      </g>
+      <g>
+        <rect x="286" y="204" width="80" height="34" rx="10" fill="url(#exec)" opacity="0.9"/>
+        <text x="326" y="225" font-weight="600">CFO</text>
+      </g>
+      <g>
+        <rect x="382" y="204" width="80" height="34" rx="10" fill="url(#exec)" opacity="0.9"/>
+        <text x="422" y="225" font-weight="600">COO</text>
+      </g>
+      <g>
+        <rect x="478" y="204" width="90" height="34" rx="10" fill="url(#exec)" opacity="0.9"/>
+        <text x="523" y="225" font-weight="600">CRO</text>
+      </g>
+    </g>
+
+    <!-- red strike-through -->
+    <path d="M88 238 L602 196" stroke="#FF4A6A" stroke-width="4" stroke-linecap="round" stroke-opacity="0.95"/>
+    <text x="600" y="250" text-anchor="end" fill="#FFB0C2" font-size="11" font-family="Inter, system-ui">
+      replaced by CAIO
+    </text>
+  </g>
+
+  <!-- CAIO connecting down -->
+  <g stroke="#6CF2FF" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" stroke-opacity="0.8">
+    <path d="M340 164 V 180"/>
+  </g>
+
+  <!-- teams row -->
+  <g font-family="Inter, system-ui" font-size="12" text-anchor="middle">
+    <g>
+      <rect x="40" y="286" width="96" height="52" rx="14" fill="url(#team)" opacity="0.9"/>
+      <text x="88" y="308" fill="#02141C" font-weight="600">DESIGN</text>
+      <text x="88" y="322" fill="#043342">kept + funded</text>
+    </g>
+    <g>
+      <rect x="144" y="286" width="96" height="52" rx="14" fill="url(#team)" opacity="0.9"/>
+      <text x="192" y="308" fill="#02141C" font-weight="600">PRODUCT</text>
+      <text x="192" y="322" fill="#043342">kept + funded</text>
+    </g>
+    <g>
+      <rect x="248" y="286" width="96" height="52" rx="14" fill="url(#team)" opacity="0.9"/>
+      <text x="296" y="308" fill="#02141C" font-weight="600">DATA</text>
+      <text x="296" y="322" fill="#043342">kept + funded</text>
+    </g>
+    <g>
+      <rect x="352" y="286" width="118" height="52" rx="14" fill="url(#team)" opacity="0.9"/>
+      <text x="411" y="308" fill="#02141C" font-weight="600">ENGINEERING</text>
+      <text x="411" y="322" fill="#043342">kept + funded</text>
+    </g>
+    <g>
+      <rect x="486" y="286" width="76" height="52" rx="14" fill="url(#team)" opacity="0.9"/>
+      <text x="524" y="308" fill="#02141C" font-weight="600">SALES</text>
+      <text x="524" y="322" fill="#043342">kept + funded</text>
+    </g>
+    <g>
+      <rect x="576" y="286" width="64" height="52" rx="14" fill="url(#team)" opacity="0.9"/>
+      <text x="608" y="308" fill="#02141C" font-weight="600">OPS</text>
+      <text x="608" y="322" fill="#043342">kept + funded</text>
+    </g>
+  </g>
+
+  <!-- CAIO → teams connections -->
+  <g stroke="#6CF2FF" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.9">
+    <path d="M340 164 C 340 210 260 248 88 286"/>
+    <path d="M340 164 C 340 210 280 252 192 286"/>
+    <path d="M340 164 C 340 212 308 254 296 286"/>
+    <path d="M340 164 C 360 210 378 252 411 286"/>
+    <path d="M340 164 C 380 208 452 254 524 286"/>
+    <path d="M340 164 C 390 206 500 252 608 286"/>
+  </g>
+
+  <!-- caption band -->
+  <g>
+    <rect x="40" y="344" width="600" height="52" rx="16" fill="#050A16" stroke="#1B2A45" stroke-width="1.2"/>
+    <text x="60" y="372" fill="#9AA7BF" font-size="12" font-family="Inter, system-ui">
+      CAIO removes ~$11.4M in annual executive spend and routes it into senior builders.
+    </text>
+    <text x="60" y="388" fill="#6CF2FF" font-size="12" font-family="Inter, system-ui">
+      Visualize the org your teams deserve: fewer titles, more shipping.
+    </text>
+  </g>
+</svg>

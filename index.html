@@ -61,10 +61,17 @@
         color: var(--muted);
       }
 
-      nav span {
+      nav a {
+        display: inline-block;
         padding: 0.4rem 0.6rem;
         border-radius: 999px;
         background: rgba(255, 255, 255, 0.04);
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--text);
       }
 
       .hero {
@@ -165,6 +172,7 @@
         color: var(--muted);
       }
 
+      .savings,
       .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -193,6 +201,149 @@
       .card img {
         width: 48px;
         height: 48px;
+      }
+
+      .org-chart {
+        margin-top: 3rem;
+        text-align: center;
+      }
+
+      .org-chart h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+      }
+
+      .org-chart p {
+        margin: 0 auto 1.5rem;
+        max-width: 48rem;
+        color: var(--muted);
+      }
+
+      .org-chart img {
+        width: 100%;
+        max-width: 960px;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 25px 60px rgba(4, 5, 10, 0.55);
+      }
+
+      .contact {
+        margin-top: 4rem;
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        background: rgba(4, 5, 10, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 15px 40px rgba(4, 5, 10, 0.45);
+      }
+
+      .contact h2 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+
+      .contact p {
+        color: var(--muted);
+        max-width: 620px;
+      }
+
+      .contact form {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem 1.25rem;
+      }
+
+      .contact label {
+        font-size: 0.85rem;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+
+      .contact input,
+      .contact textarea,
+      .contact select {
+        width: 100%;
+        border-radius: 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.4);
+        color: var(--text);
+        padding: 0.85rem 1rem;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+
+      .contact textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      .contact .full {
+        grid-column: 1 / -1;
+      }
+
+      .contact button {
+        justify-self: start;
+        border: none;
+        border-radius: 999px;
+        padding: 0.9rem 2.2rem;
+        background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+        color: #04050a;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .pricing {
+        margin-top: 4rem;
+      }
+
+      .pricing h2 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .pricing .lead {
+        max-width: 40rem;
+        color: var(--muted);
+        margin: 0 0 2rem;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .pricing-tier {
+        padding: 1.75rem;
+        border-radius: 1.25rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+      }
+
+      .pricing-tier.highlight {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 1px rgba(108, 242, 255, 0.35);
+      }
+
+      .pricing-tier h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .pricing-tier p {
+        margin: 0.25rem 0;
+        color: var(--muted);
+      }
+
+      .pricing-tier strong {
+        color: var(--text);
+      }
+
+      .pricing-note {
+        margin-top: 1.25rem;
+        font-size: 0.85rem;
+        color: var(--muted);
       }
 
       .closing {
@@ -240,16 +391,16 @@
   </head>
   <body>
     <div class="page">
-      <header>
-        <div class="logo">CAIO</div>
-        <nav>
-          <span>Product</span>
-          <span>Outcomes</span>
-          <span>Pricing</span>
-        </nav>
-      </header>
-
-      <section class="hero">
+	      <header>
+	        <div class="logo">CAIO</div>
+	        <nav>
+	          <a href="#product">Product</a>
+	          <a href="#outcomes">Outcomes</a>
+	          <a href="#pricing">Pricing</a>
+	        </nav>
+	      </header>
+	
+	      <section class="hero" id="product">
         <div class="hero-copy">
           <div class="pill-list">
             <div class="pill">Executive-as-a-Service</div>
@@ -262,7 +413,7 @@
             board updates—so you can refocus payroll on builders, not bonuses.
           </p>
           <div class="cta-row">
-            <button class="cta-primary">Schedule an Automation Firing</button>
+            <a class="cta-primary" href="#contact">Schedule an Automation Firing</a>
             <button class="cta-secondary">See the savings model</button>
           </div>
         </div>
@@ -271,7 +422,9 @@
         </div>
       </section>
 
-      <section class="metrics">
+      <h2>Investing in the business, not in bonuses</h2>
+
+	      <section class="metrics" id="outcomes">
         <article class="metric">
           <h3>92%</h3>
           <p>Average reduction in executive payroll + perks.</p>
@@ -286,8 +439,63 @@
         </article>
       </section>
 
-      <section class="grid">
-        <article class="card">
+
+      <section class="metrics">
+        <article class="metric">
+          <h3>$2.4M</h3>
+          <p>Average annual cost per Fortune 100 EVP (cash, stock, perks).</p>
+        </article>
+        <article class="metric">
+          <h3>$118K</h3>
+          <p>Median senior IC package—budget CAIO diverts back to builders.</p>
+        </article>
+        <article class="metric">
+          <h3>9x</h3>
+          <p>Exec-to-engineer cost ratio before travel + bonus multipliers.</p>
+        </article>
+      </section>
+
+      <section class="metrics">
+        <article class="metric">
+          <h4>Line-item reality</h4>
+          <p>
+            CFO, COO, CRO, and EVP roles average $11.8M/year combined once you
+            tally salary, equity refresh, bonus multipliers, aircraft leases,
+            and tax-equalized perks.
+          </p>
+        </article>
+        <article class="metric">
+          <h4>Replacement math</h4>
+          <p>
+            Swapping the four roles for CAIO and a lean governance council costs
+            $400K/year, returning $11.4M annually—enough to hire 96 senior
+            engineers at $120K cash comp plus benefits.
+          </p>
+        </article>
+        <article class="metric">
+          <h4>Payback period</h4>
+          <p>
+            CAIO onboarding completes inside 21 days, so the full investment is
+            recouped before quarter-end, a 0.06-year payback with immediate EPS
+            impact.
+          </p>
+        </article>
+      </section>
+
+      <section class="org-chart">
+        <h3>Org chart reality check</h3>
+        <p>
+          Visualize how CAIO removes redundant executive layers and reroutes
+          capital back into the teams that actually ship product.
+        </p>
+        <img
+          src="assets/org-chart.png"
+          alt="Org chart showing executive cuts replaced by CAIO"
+        />
+      </section>
+
+	      <section class="grid">
+	        <article class="card">
           <img src="assets/reporting.svg" alt="Reporting icon" />
           <h4>Board-ready intelligence</h4>
           <p>
@@ -317,8 +525,91 @@
           <p>
             Detect governance red flags, compliance gaps, and PR storms before
             they hit the press cycle.
-          </p>
-        </article>
+	          </p>
+	        </article>
+	      </section>
+
+	      <section class="pricing" id="pricing">
+	        <h2>Pricing that tracks your org chart</h2>
+	        <p class="lead">
+	          CAIO is priced as a fraction of one executive package, with tiers tuned
+	          to how aggressively you want to de-layer the C-suite.
+	        </p>
+	        <div class="pricing-grid">
+	          <article class="pricing-tier">
+	            <h3>Lean Teams</h3>
+	            <p>Up to 250 employees, replacing 1–2 VP/EVP roles.</p>
+	            <p><strong>$8,000 / month</strong></p>
+	            <p>Expected savings: <strong>≈$1.2M / year</strong> in cash, stock, and perks.</p>
+	          </article>
+	          <article class="pricing-tier highlight">
+	            <h3>Growth Stage</h3>
+	            <p>250–2,000 employees, replacing a full exec lane.</p>
+	            <p><strong>$18,000 / month</strong></p>
+	            <p>Expected savings: <strong>≈$4.8M / year</strong> across CFO/COO/CRO bands.</p>
+	          </article>
+	          <article class="pricing-tier">
+	            <h3>Enterprise Rollup</h3>
+	            <p>Global enterprises, multiple business units, complex governance.</p>
+	            <p><strong>Custom, starting around one SVP salary</strong></p>
+	            <p>Expected savings: <strong>$10M+ / year</strong> when consolidating 4–6 executive seats.</p>
+	          </article>
+	        </div>
+        <p class="pricing-note">
+          All numbers are illustrative, based on blended Fortune 100 compensation data and
+          typical bonus/equity structures. Your actual savings depend on how brave your org
+          is about letting CAIO take the corner office.
+        </p>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Schedule an automation firing</h2>
+        <p>
+          Tell us which executive seats you want CAIO to assume and our sales team will walk
+          you through the comp analysis, governance sign-off, and rollout timeline. No golf
+          outings required.
+        </p>
+        <form>
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jesse Alvarez" />
+          </div>
+          <div>
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Apex Robotics" />
+          </div>
+          <div>
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" placeholder="jesse@apex.com" />
+          </div>
+          <div>
+            <label for="size">Company size</label>
+            <select id="size" name="size">
+              <option value="">Select</option>
+              <option value="1">Under 250 employees</option>
+              <option value="2">250–2,000 employees</option>
+              <option value="3">2,000+ employees</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="targets">Executive seats targeted</label>
+            <input
+              type="text"
+              id="targets"
+              name="targets"
+              placeholder="e.g., CFO + COO + EVP Strategy"
+            />
+          </div>
+          <div class="full">
+            <label for="notes">Context for our team</label>
+            <textarea
+              id="notes"
+              name="notes"
+              placeholder="Any timing constraints, board expectations, or compliance hurdles?"
+            ></textarea>
+          </div>
+          <button type="submit">Send to CAIO Sales</button>
+        </form>
       </section>
 
       <section class="closing">
@@ -332,7 +623,7 @@
         <button class="cta-primary">Deploy CAIO</button>
       </section>
 
-      <footer>© 2024 CAIO Labs. No humans were expensed.</footer>
+      <footer>© 2025 CAIO Labs. No humans were expensed.</footer>
     </div>
   </body>
 </html>
