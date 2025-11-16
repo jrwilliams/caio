@@ -1,0 +1,28 @@
+<svg width="520" height="240" viewBox="0 0 520 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grid-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#040B17"/>
+      <stop offset="1" stop-color="#03030C"/>
+    </linearGradient>
+    <linearGradient id="grid-line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6CF2FF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#2EE1FF" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="240" rx="32" fill="url(#grid-bg)"/>
+  <path d="M60 60H460V180H60V60Z" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.4"/>
+  <path d="M110 100L410 100" stroke="url(#grid-line)" stroke-width="1.2"/>
+  <path d="M110 140L410 140" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.8"/>
+  <path d="M110 180L410 180" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.5"/>
+  <path d="M160 60V200" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.6"/>
+  <path d="M210 60V200" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.4"/>
+  <path d="M260 60V200" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.5"/>
+  <path d="M310 60V200" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.7"/>
+  <path d="M360 60V200" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.5"/>
+  <path d="M410 60V200" stroke="url(#grid-line)" stroke-width="1.2" stroke-opacity="0.6"/>
+  <circle cx="160" cy="100" r="6" fill="#6CF2FF"/>
+  <circle cx="260" cy="140" r="10" stroke="#32B1FF" stroke-width="2"/>
+  <circle cx="360" cy="100" r="8" fill="#32B1FF"/>
+  <circle cx="310" cy="180" r="5" fill="#6CF2FF"/>
+  <path d="M110 120C140 110 180 110 210 120C240 130 280 130 310 120C340 110 380 110 410 120" stroke="#32B1FF" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.8"/>
+</svg>

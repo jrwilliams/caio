@@ -1,0 +1,19 @@
+<svg width="480" height="280" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vg-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030814"/>
+      <stop offset="1" stop-color="#01020A"/>
+    </linearGradient>
+    <linearGradient id="vg-curve" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6CF2FF"/>
+      <stop offset="1" stop-color="#4294FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" rx="28" fill="url(#vg-bg)"/>
+  <path d="M60 210C120 200 180 190 220 170C260 150 300 120 360 90C420 60 440 80 460 40" stroke="url(#vg-curve)" stroke-width="5" fill="none"/>
+  <circle cx="460" cy="40" r="18" stroke="url(#vg-curve)" stroke-width="3"/>
+  <circle cx="460" cy="40" r="6" fill="#6CF2FF"/>
+  <path d="M360 90C360 130 380 150 420 160" stroke="url(#vg-curve)" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="80" y="60" fill="#6CF2FF" font-size="16" font-family="Inter, system-ui">Projected vibes-only growth</text>
+  <text x="80" y="80" fill="#3FAEDB" font-size="12" font-family="Inter, system-ui">board buy-in secured</text>
+</svg>

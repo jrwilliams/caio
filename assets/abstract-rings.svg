@@ -1,0 +1,25 @@
+<svg width="520" height="240" viewBox="0 0 520 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050918"/>
+      <stop offset="1" stop-color="#02030B"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6CF2FF"/>
+      <stop offset="1" stop-color="#4294FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="240" rx="32" fill="url(#bg)"/>
+  <circle cx="120" cy="120" r="90" stroke="url(#ring)" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="120" cy="120" r="60" stroke="url(#ring)" stroke-width="1.5" stroke-opacity="0.8"/>
+  <circle cx="120" cy="120" r="30" stroke="url(#ring)" stroke-width="2"/>
+  <circle cx="320" cy="120" r="110" stroke="url(#ring)" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="320" cy="120" r="80" stroke="url(#ring)" stroke-width="1.5" stroke-opacity="0.6"/>
+  <circle cx="320" cy="120" r="45" stroke="url(#ring)" stroke-width="2"/>
+  <circle cx="320" cy="120" r="8" fill="#6CF2FF"/>
+  <circle cx="200" cy="70" r="6" fill="#32B1FF"/>
+  <circle cx="400" cy="60" r="5" fill="#6CF2FF" opacity="0.8"/>
+  <circle cx="420" cy="170" r="7" fill="#32B1FF" opacity="0.7"/>
+  <circle cx="140" cy="190" r="5" fill="#6CF2FF" opacity="0.5"/>
+  <circle cx="280" cy="140" r="14" stroke="#32B1FF" stroke-width="2" stroke-opacity="0.7"/>
+</svg>
